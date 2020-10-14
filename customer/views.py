@@ -10,10 +10,11 @@ class CustomerListView(ListView):
 
 class CustomerCreateView(CreateView):
     template_name = "customer/customer.html"
-    form_class = CustomerForm
+    form_class = CustomerForm #Formulário padrão do Django
 
     def form_valid(self, form):
         return super().form_valid(form)
     
+    #Retorna a URL após preencher com sucesso o forms
     def get_success_url(self):
         return reverse('customer:customer_list')
