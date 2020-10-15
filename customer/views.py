@@ -7,7 +7,7 @@ from django.db.models import Q #permite uso de Or (ou)
 
 class CustomerListView(ListView):
     template_name = "customer/customer_list.html"
-    paginate_by = 2
+    paginate_by = 4
     model = Customer
 
     def get_queryset(self):
