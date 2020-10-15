@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'crm.wsgi.application'
     }
 } """
 
-DATABASES = {}
+#DATABASES = {}
 #Criando o banco de conexao com o Heroku
 DATABASES['default'] = dj_database_url.config()
 
