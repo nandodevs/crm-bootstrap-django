@@ -2,7 +2,7 @@ import os
 
 from pathlib import Path
 
-django_heroku.settings(locals())
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -74,11 +74,7 @@ DATABASES = {
 
     'default': dj_database_url.config()
 }
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+
 
 #Criando o banco de conexao com o Heroku
 
