@@ -18,7 +18,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['crm-nando.herokuapp.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -71,10 +70,10 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {}
-DATABASES['default'] = dj_database_url()
-
-
 #Criando o banco de conexao com o Heroku
+DATABASES['default'] = dj_database_url.config()
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
