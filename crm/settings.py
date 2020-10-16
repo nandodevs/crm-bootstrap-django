@@ -70,10 +70,8 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-
-    'default': dj_database_url.config()
-}
+DATABASES = {}
+DATABASES['default'] = dj_database_url()
 
 
 #Criando o banco de conexao com o Heroku
