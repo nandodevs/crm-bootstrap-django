@@ -14,9 +14,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '1kie1#fyk*x8gl(ng@4kcru*8@)0^!o8vo)-p)t=b@-t*g4+k%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['crm-nando.herokuapp.com']
+ALLOWED_HOSTS = ['crm-nando.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -72,7 +72,6 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 DATABASES = {}
 #Criando o banco de conexao com o Heroku
 DATABASES['default'] = dj_database_url.config()
-
 
 
 # Password validation
