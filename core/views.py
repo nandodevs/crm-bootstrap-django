@@ -4,7 +4,7 @@ from django.contrib import messages
 
 
 def login(request):
-   return render(request, "login.html")
+   return render(request, "homepage.html")
 
 def submit_login(request):
     if(request.POST):
