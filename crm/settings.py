@@ -14,9 +14,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '1kie1#fyk*x8gl(ng@4kcru*8@)0^!o8vo)-p)t=b@-t*g4+k%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['crm-nando.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -116,4 +116,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 LOGIN_URL = '/login/'
+
+try:
+    from .settings_local import *
+except ImportError:
+    pass
 
