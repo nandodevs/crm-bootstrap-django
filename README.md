@@ -1,6 +1,6 @@
 # Projeto da Digital Innovation ONE - CRM
 ### Sistema de Gestão de Clientes
-# --------------------------------
+# ----------------------------------
 #### Tecnologias utilizadas:
 ![](https://miro.medium.com/max/4000/1*w-iGJIS3DjfC6ZPkux5MQQ.png)
 
